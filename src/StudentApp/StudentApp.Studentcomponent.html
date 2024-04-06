@@ -1,0 +1,42 @@
+
+<div class="head">
+ 
+  <div class="label">
+Name :<input type="text" placeholder="Enter Name" [(ngModel)]="studObj.Name" required><br/><br/></div>
+  <div class="label">
+   
+Email :<input type="text" placeholder="Enter Email" [(ngModel)]="studObj.Email"  required><br/><br/></div>
+  <div class="label">
+Age    :<input type="number" placeholder="Enter Age" [(ngModel)]="studObj.Age" required><br/><br/></div>
+
+
+<!-- {{studObj.Name}}
+{{studObj.Dept}}
+{{studObj.Age}} -->
+<button (click)="Add()">{{ btn_value }}</button>
+
+<button (click)="clear()">Clear</button>
+</div>
+
+<div class="body">
+<table border="1">
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Age</td>
+      <td>Edit</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of arrayObjs">
+      <td>{{i.Name}}</td>
+      <td>{{i.Email}}</td>
+      <td>{{i.Age}}</td>
+      <td><a href="javascript:void(0)" (click)="edit(i)" >Edit</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+

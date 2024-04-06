@@ -1,0 +1,15 @@
+nav{
+    align-items: center;
+    font-size: 2rem;
+
+}
+
+nav ul{
+    line-height: 40%;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 40px;
+}
